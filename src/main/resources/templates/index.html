@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>Ollama Chat</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            width:900px;
+            margin:auto;
+            margin-top:40px;
+        }
+
+        textarea{
+            width:100%;
+            height:120px;
+        }
+
+        button{
+            margin-top:10px;
+            padding:10px;
+            width:120px;
+        }
+
+        .question{
+
+            background:#dbeafe;
+            padding:15px;
+            margin-top:30px;
+            border-radius:10px;
+
+        }
+
+        .answer{
+
+            background:#dcfce7;
+            padding:15px;
+            margin-top:10px;
+            border-radius:10px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>My Local AI</h1>
+
+<form action="/ask" method="post">
+
+    <textarea
+            name="question"
+            placeholder="Ask anything..."></textarea>
+
+    <br>
+
+    <button>
+
+        Send
+
+    </button>
+
+</form>
+
+<div th:if="${question!=null}" class="question">
+
+    <b>You</b>
+
+    <hr>
+
+    <span th:text="${question}"></span>
+
+</div>
+
+<div th:if="${answer!=null}" class="answer">
+
+    <b>AI</b>
+
+    <hr>
+
+    <span th:text="${answer}"></span>
+
+</div>
+
+</body>
+
+</html>
