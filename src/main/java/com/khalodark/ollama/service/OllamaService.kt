@@ -2,8 +2,10 @@ package com.khalodark.ollama.service
 
 import com.khalodark.ollama.model.OllamaRequest
 import com.khalodark.ollama.model.OllamaResponse
+import org.springframework.stereotype.Service
 import org.springframework.web.client.RestClient
 
+@Service
 class OllamaService {
 
     private val restClient = RestClient.builder()
@@ -14,7 +16,7 @@ class OllamaService {
 
         val request = OllamaRequest(
 
-            model = "qwen3:8b",
+            model = "deepseek-coder:6.7b",
 
             prompt = question
 

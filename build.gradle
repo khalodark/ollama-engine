@@ -26,6 +26,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+	implementation 'com.vladsch.flexmark:flexmark-all:0.64.8'
 }
 
 tasks.named('test') {

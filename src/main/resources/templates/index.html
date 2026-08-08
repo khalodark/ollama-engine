@@ -74,6 +74,7 @@
 
     <span th:text="${question}"></span>
 
+
 </div>
 
 <div th:if="${answer!=null}" class="answer">
@@ -82,8 +83,7 @@
 
     <hr>
 
-    <span th:text="${answer}"></span>
-
+    <div th:utext="${answer}"></div>
 </div>
 
 </body>
