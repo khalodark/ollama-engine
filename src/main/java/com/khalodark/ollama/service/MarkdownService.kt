@@ -11,7 +11,6 @@ class MarkdownService {
 
     private val renderer = HtmlRenderer.builder().build()
 
-
     fun convert(markdown:String):String {
 
         val document = parser.parse(markdown)
