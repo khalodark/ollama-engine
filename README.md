@@ -1,16 +1,16 @@
-This is personal implementation of Ollama AI Engine, I used buch of models inside and it is very basic 
+This is personal implementation of Ollama AI Engine, I used bunch of models inside
 the models used : 
 - qwen3:8b
 - qwen3:4b
 - deepseek-coder
 
-  The latest implemenation you can find in OllamaService is Deepseeker-coder
+The latest implemenation you can find in OllamaService is Deepseeker-coder
 
-  The project is so simple, textView to ask your question and button you will see your question with answer
+The project is simple, textView to write your question and a button 'ask' to send the question to ollama, will see your question with answer in the same page.
 
-  Built using spring boot in kotlin.
+Built using spring boot in kotlin.
 
-# Getting Started
+# Spring boot Getting Started
 
 ### Reference Documentation
 For further reference, please consider the following sections:
