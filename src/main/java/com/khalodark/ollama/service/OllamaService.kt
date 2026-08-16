@@ -15,9 +15,10 @@ class OllamaService {
     fun ask(question: String): String {
 
         val request = OllamaRequest(
-
-            model = "deepseek-coder:6.7b",
-
+            // another model to use for your programming :
+            // qwen3.5-claude-4.6-opus
+//            model = "deepseek-coder:6.7b",
+            model = "sinhang/qwen3.5-claude-4.6-opus:27b-q4_K_M",
             prompt = question
 
         )
